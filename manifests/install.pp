@@ -32,7 +32,7 @@ class katello_devel::install {
 
   if $katello_devel::foreman_manage_repo {
     katello_devel::git_repo { 'foreman':
-      source          => 'theforeman/foreman',
+      source          => 'chris1984/foreman',
       github_username => $katello_devel::github_username,
       revision        => $katello_devel::foreman_scm_revision,
     }
